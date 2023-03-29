@@ -7,8 +7,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введіть ваше число: ");
         int num = scanner.nextInt();
+        System.out.println("Ваш трикутник за заданим розміром");
         scanner.close();
         triangular(num);
+        System.out.println("\nРух до вашого заданного чилса");
         numbers(num);
 
     }
@@ -23,7 +25,11 @@ public class Main {
         }
     }
     public static void numbers(int l){
-        if (l>0)
-            System.out.println("Bark");
+        if (l > 0){
+            numbers(l - 1);
+            System.out.print(l);
+        }
     }
+
+
 }
