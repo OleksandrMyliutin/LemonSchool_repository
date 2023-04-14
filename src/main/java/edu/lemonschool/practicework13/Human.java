@@ -4,7 +4,7 @@ import lombok.Builder;
 
 import java.util.Arrays;
 @Builder
-public class Human {
+public class Human{
     private String firstName;
     private String secondName;
     private String thirdName;
