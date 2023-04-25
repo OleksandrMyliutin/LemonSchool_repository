@@ -6,5 +6,4 @@ public interface Store<T> {
     void addProduct(T product);
     boolean sellProduct(T product);
     List<T> getAllProducts();
-    T getProductByName(String name);
 }

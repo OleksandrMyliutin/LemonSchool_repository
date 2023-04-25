@@ -4,10 +4,6 @@ public class Processor extends Hardware{
     public Processor(String name, String model, String description, Producer producer) {
         super(name, model, description, producer);
     }
-    public void processWork(String Info){
-        System.out.println(Info);
-    }
-
     @Override
     public String toString() {
         return "Processor{" +
